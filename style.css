@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: thistle;
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #container {
-  margin: 0 auto;
-  border: 2px solid #fff;
-  background-color: rgb(255, 186, 186);
+  margin: 100px auto;
+  border: 8px solid #000;
+  background-color: crimson;
   padding: 10px;
   width: 800px;
-  border-radius: 2%;
+  border-radius: 0%;
   display: none;
 }
 
@@ -25,6 +25,7 @@ header {
   background-color: crimson;
   color: #fff;
   font-size: 19px;
+  border-bottom: 10px solid rgb(0, 0, 0);
 }
 
 header h1 {
@@ -36,7 +37,6 @@ header .btnStart {
   background-color: crimson;
   top: 2%;
   left: 50%;
-  color: #fff;
   cursor: pointer;
   border: none;
 }
@@ -54,9 +54,10 @@ header .btnStart {
 
 .form input,
 .form button {
+  margin-top: 10px;
   padding: 6px;
   border-radius: 10px;
-  border: 2px solid #fff;
+  border: 1px solid #000;
   font-size: 16px;
 }
 
@@ -72,13 +73,19 @@ header .btnStart {
 }
 
 .list {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding: 10px;
-  margin-top: 5px;
+  margin: 0 auto;
   font-size: 16px;
   text-transform: uppercase;
+  width: 20%;
 }
 
 .list li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.list li:hover {
+  cursor: pointer;
 }
